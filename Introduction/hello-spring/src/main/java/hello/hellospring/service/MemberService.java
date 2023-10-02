@@ -51,8 +51,8 @@ public class MemberService {
         try {
             return memberRepository.findAll();
         } finally {
-            long finsih = System.currentTimeMillis();
-            long timeMs = finsih - start;
+            long finish = System.currentTimeMillis();
+            long timeMs = finish - start;
             System.out.println("findMembers = " + timeMs + "ms");
         }
     }
